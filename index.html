@@ -12,18 +12,34 @@
 
     <title>Sudhakar KT</title>
     <style>
-      h4 {
+      .wrapper {
         height: calc(100vh - 8px);
         display: flex;
         width: 100%;
         max-width: 100%;
         align-items: center;
         justify-content: center;
+        position: relative;
+      }
+      .abs-cont {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: #FFF;
       }
     </style>
   </head>
   <body class="text-center">
-    <h4><img width="150" src="logo.png" /></h4>
+    <div class="wrapper"><img width="150" src="logo.png" />
+      <div class="abs-cont">
+        <p>ajax</p>
+        <p>alphabetical-javaScript-reference</p>
+        <p>javascript</p>
+        <p>json</p>
+        <p>js-oops</p>
+        <p>shortcuts</p>
+      </div>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
