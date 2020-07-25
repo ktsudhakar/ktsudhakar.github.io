@@ -2,52 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>Javascript Practise</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Javascript Practise</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    p {
+      margin-bottom: 0;
+    }
+    h5 {
+      margin-top: 15px;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="30" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="js-oops.html">JS OOPS</span></a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="json.html">JSON</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ajax.html">AJAX</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="alphabetical-javaScript-reference.html">Alphabetical JavaScript Reference</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="shortcuts.html">Shortcuts</a></li>
-                </ul>
-            </div>
-        </nav>
-        <h1 class="text-center">Shortcuts</h1>
-        <p>* <code>ctrl + f8 </code> to disable breakpoints in chrome debugger.</p>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="30" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="js-oops.html">JS OOPS</span></a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="json.html">JSON</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ajax.html">AJAX</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="alphabetical-javaScript-reference.html">Alphabetical JavaScript
+              Reference</a></li>
+          <li class="nav-item active"><a class="nav-link" href="shortcuts.html">Shortcuts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="text-center">Git Commands</h1>
+    <p><code>git clone</code> (URL) (Project Name)</p>
+    <p><code>cd</code> (project_name)</p>
+    <p><code> git checkout</code> (project_branch)</p>
+    <p><code> git pull origin</code> (project_branch)</p>
+    <p><code> chmod -R ug+w .;</code></p>
+    <p><code> composer install</code></p>
+    <p><code> composer update --lock</code></p>
+    <p><code> vendor/drush/drush/drush cr</code></p>
+    <p><code> ./build-themes.sh -t</code> (Theme Name)</p>
+    <p><code> ./scripts/build-themes.sh</code> (Theme Name) @Somecase</p>
 
-        <a class="test" href="https://w3schools.com/">Go to W3Schools.com</a>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script src="js/testing.js"></script>
+    <h5>DB Update in settings.php</h5>
+    <p><code>$databases['default']['default'] = array (<br/>
+    'database' => 'dbname',<br/>
+    'username' => 'root',<br/>
+    'password' => 'root',<br/>
+    'host' => '127.0.0.1',<br/>
+    'port' => '8889',<br/>
+    'driver' => 'mysql',<br/>
+    'prefix' => '',<br/>
+    'collation' => 'utf8mb4_general_ci',);<br/></code></p>
+
+    <h5>Mysql Commands</h5>
+    <p><code>mysql -h 127.0.0.1 --port 8889 -u root -p</code></p>
+    <p><code>Create database</code> (db_name);</p>
+    <p><code>SET GLOBAL max_allowed_packet=1024*1024*1024;</code> (optional if error come)</p>
+    <p><code>Use</code> (db_name);</p>
+    <p><code>SHOW VARIABLES LIKE 'max_allowed_packet’;</code></p>
+    <p><code>Source </code> (file path);</file></p>
+    <p><code>Exit</code></p>
+    <p><code>Delete Database:</code></p>
+    <p><code>Show databases;</code></p>
+    <p><code>drop database</code> (db_name);</p>
+
+    <h5>FILE CHANGES</h5>
+    <p>update docroot/sites/default/settings.php file</p>
+    <p>update docroot/sites/default/gulpfile.js file</p>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="js/testing.js"></script>
 </body>
 
 </html>
