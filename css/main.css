@@ -1,0 +1,54 @@
+body {
+    background-color: #1b1b1b;
+    color: #FFF;
+}
+
+h1, h5, h6 {
+    font-weight: 300;
+    text-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+h1 {
+    color: #ddc602;
+    margin: 1rem 0;
+}
+
+h5 {
+    color: #e3cb00;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+h6 {
+    color: #e3cb00;
+    text-transform: capitalize;
+    text-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.code-block {
+    margin-left: 20px;
+}
+
+.table th {
+    font-weight: 600;
+    color: #ddc602;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    margin: 0px -15px 0 -15px;
+}
+
+a.navbar-brand {
+    margin: -0.5rem 1.5rem -0.5rem -1rem;
+    width: 50px;
+    text-align: center;
+}
+
+.alert {
+    display: inline-block;
+    max-width: 750px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Javascript Practise</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" height="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">JavaScript</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="js-oops.html">JS OOPS</span></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="json.html">JSON</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ajax.html">AJAX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alphabetical-javaScript-reference.html">Alphabetical JavaScript
+                            Reference</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="shortcuts.html">Shortcuts</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="text-center">AJAX</h1>
+
+        <p>* AJAX is a developer's dream, because you can</p>
+        <ul>
+            <li>AJAX is not a programming language.</li>
+            <li>AJAX is a technique for accessing web servers from a web page.</li>
+            <li>AJAX stands for Asynchronous JavaScript And XML.</li>
+            <li>Read data from a web server - after the page has loaded</li>
+            <li>Update a web page without reloading the page</li>
+            <li>Send data to a web server - in the background</li>
+        </ul>
+
+        <p>* AJAX just uses a combination of:</p>
+        <ul>
+            <li>A browser built-in "XMLHttpRequest" object (to request data from a web server)</li>
+            <li>JavaScript and HTML DOM (to display or use the data)</li>
+        </ul>
+
+        <p><span class="alert alert-primary">* AJAX allows web pages to be updated asynchronously by exchanging data
+                with a web server behind the scenes. This means that it is possible to update parts of a web page,
+                without reloading the whole page.</span></p>
+        <p><img src="images/how-ajax-works.jpg" class="img-fluid" /></p>
+        <p>* The keystone of AJAX is the XMLHttpRequest object. All modern browsers support the XMLHttpRequest object.
+        </p>
+        <p class="code-block">
+            <code>variable = new XMLHttpRequest();</code>
+        </p>
+        <h6>Access Across Domains</h6>
+        <p>* For security reasons, modern browsers do not allow access across domains.</p>
+        <p>* This means that both the web page and the XML file it tries to load, must be located on the same server.
+        </p>
+        <p>* The examples on W3Schools all open XML files located on the W3Schools domain.</p>
+        <h6>Older Browsers (IE5 and IE6)</h6>
+        <p>* Old versions of Internet Explorer (5/6) use an ActiveX object instead of the XMLHttpRequest object:</p>
+        <p class="code-block">
+            <code>variable = new ActiveXObject("Microsoft.XMLHTTP");</code>
+        </p>
+        <p>* To handle IE5 and IE6, check if the browser supports the XMLHttpRequest object, or else create an ActiveX
+            object.</p>
+        <p><img src="images/activeXObject-for-ie5-and-ie6.jpg" class="img-fluid" /></p>
+
+        <h6>Send a Request To a Server</h6>
+        <p>* To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object.</p>
+        <h6>Simple GET Method</h6>
+        <p class="code-block">
+            <code>
+                xhttp.open("GET", "ajax_info.txt", true);<br/>
+                xhttp.send();
+            </code>
+        </p>
+        <p>* GET is simpler and faster than POST, and can be used in most cases.</p>
+        <p>* However, always use POST requests when:</p>
+        <ul>
+            <li>A cached file is not an option (update a file or database on the server).</li>
+            <li>Sending a large amount of data to the server (POST has no size limitations).</li>
+            <li>Sending user input (which can contain unknown characters), POST is more robust and secure than GET.</li>
+        </ul>
+        <p>* Get method -> maximum of 2,048 characters, minus the number of characters in the actual path.</p>
+        <p>* POST has no size limitations.</p>
+        <p>* To avoid cached result, add a unique ID to the URL.</p>
+        <p class="code-block">
+            <code>
+                xhttp.open("GET", "demo_get.asp?t=" + Math.random(), true);<br/>
+                xhttp.send();
+            </code>
+        </p>
+        <p>* If you want to send information with the GET method, add the information to the URL:</p>
+        <p class="code-block">
+            <code>
+                xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford", true);<br/>
+                xhttp.send();
+            </code>
+        </p>
+        <h6>Simple POST Method</h6>
+        <p class="code-block">
+            <code>
+                xhttp.open("POST", "demo_post.asp", true);<br/>
+                xhttp.send();
+            </code>
+        </p>
+        <p>* To POST data like an HTML form, add an HTTP header with setRequestHeader(). Specify the data you want to send in the send() method.</p>
+        <p class="code-block">
+            <code>
+                xhttp.open("POST", "ajax_test.asp", true);<br/>
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); //setRequestHeader(header, value)<br/>
+                xhttp.send("fname=Henry&lname=Ford");<br/>
+            </code>
+        </p>
+        <p>* The url parameter of the open() method, is an address to a file on a server. The file can be any kind of file, like .txt and .xml, or server scripting files like .asp and .php (which can perform actions on the server before sending the response back).</p>
+        <p>* Server requests should be sent asynchronously. The async parameter of the open() method should be set to true.</p>
+        <p>By sending asynchronously, the JavaScript does not have to wait for the server response, but can instead.</p>
+        <ul>
+            <li>execute other scripts while waiting for server response</li>
+            <li>deal with the response after the response is ready</p></li>
+        </ul>
+        <h6>The onreadystatechange Property</h6>
+        <p>* With the XMLHttpRequest object you can define a function to be executed when the request receives an answer. The function is defined in the onreadystatechange property of the XMLHttpRequest object:</p>
+        <h6>Callback Function</h6>
+        <p>A callback function is a function passed as a parameter to another function.</p>
+        <p>* The getAllResponseHeaders() Method -> The getAllResponseHeaders() method returns all header information from the server response.</p>
+        <p class="code-block">
+            <code>this.getAllResponseHeaders();</code>
+        </p>
+        <p>The getResponseHeader() Method -> The getResponseHeader() method returns specific header information from the server response.</p>
+        <p class="code-block">
+            <code>this.getResponseHeader("Last-Modified");</code>
+        </p>
+        <button type="button" onclick="loadDoc()">Get my CD collection</button>
+        <table id="xmlprint"></table>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/testing.js"></script>
+</body>
+
+</html>

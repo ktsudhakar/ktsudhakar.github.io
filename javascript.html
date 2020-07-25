@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Javascript Practise</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" height="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">JavaScript</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="js-oops.html">JS OOPS</span></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="json.html">JSON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ajax.html">AJAX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alphabetical-javaScript-reference.html">Alphabetical JavaScript
+                            Reference</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="shortcuts.html">Shortcuts</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="text-center">Javascript</h1>
+
+        <p><img src="images/javaScript.jpg" class="img-fluid" /></p>
+        <p><img src="images/javaScript-versions.jpg" class="img-fluid" /></p>
+
+        <h5>Javascript - Variables</h5>
+
+        <p>* JavaScript variables are containers for storing data values.</p>
+        <p>* Variable - Numbers are not allowed as the first character.</p>
+        <p>* Javascript variables does not start with number. Other than we can use (aBC, _abc, ABC, $abc, $100)</p>
+        <p>* All JavaScript variables must be identified with unique names. These unique names are called identifiers.</p>
+        <p>*In JavaScript, objects and functions are also variables.</p>
+        <p><span class="alert alert-primary">Scope determines the accessibility of variables, objects, and functions from different parts of the code.</span></p>
+
+        <h5>JavaScript Data Types</h5>
+
+        <p><img src="images/javaScript-data-types.jpg" class="img-fluid" /></p>
+
+        <h5>The typeof Operator</h5>
+
+        <p><img src="images/typeof-operator.jpg" class="img-fluid" /></p>
+        <ul>
+            <li>The data type of NaN is number</li>
+            <li>The data type of an array is object</li>
+            <li>The data type of a date is object</li>
+            <li>The data type of null is object</li>
+            <li>The data type of an undefined variable is undefined *</li>
+            <li>The data type of a variable that has not been assigned a value is also undefined *</li>
+        </ul>
+        <p><span class="alert alert-warning">You cannot use typeof to determine if a JavaScript object is an array (or a
+                date).</span></p>
+
+        <h5>String</h5>
+
+        <p>* If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+        <p>* When used on strings, the + operator is called the concatenation operator..</p>
+        <p>* = assign, == compares it isequal, === compare its equal both value and the type are same.</p>
+        <p>* The exponentiation operator (**) and Math.pow(x,y) are same.</p>
+
+        <h5>Difference Between Undefined and Null</h5>
+
+        <p>* undefined and null are equal in value but different in type:.</p>
+        <p class="code-block">
+            <code>
+                typeof undefined    ->  undefined<br/>
+                typeof null         ->  object<br/>
+
+                null === undefined  ->  false<br/>
+                null == undefined   ->  true<br/>
+            </code>
+        </p>
+
+        <h5>Primitive Data</h5>
+
+        <p>* A primitive data value is a single simple data value with no additional properties and methods. The
+            typeof operator can return one of these primitive types:.</p>
+        <ul>
+            <li>string</li>
+            <li>number</li>
+            <li>boolean</li>
+            <li>undefined</li>
+        </ul>
+
+        <h5>Complex Data</h5>
+
+        <p>* The typeof operator can return one of two complex types:.</p>
+
+        <ul>
+            <li>function</li>
+            <li>object</li>
+        </ul>
+        <p>* The typeof operator returns "object" for objects, arrays, and null.</p>
+        <p>* The typeof operator does not return "object" for functions.</p>
+        <p class="code-block">
+            <code>
+                typeof {name:'John', age:34} // Returns "object" <br/>
+                typeof [1,2,3,4]             // Returns "object" (not "array", see note below) <br/>
+                typeof null                  // Returns "object" <br/>
+                typeof function myFunc(){}   // Returns "function" <br/>
+            </code>
+        </p>
+        <p>* The typeof operator returns "object" for arrays because in JavaScript arrays are objects.</p>
+
+        <p class="code-block"></p>
+        <p class="code-block">
+            <code>Array.isArray(array_name)</code>
+        </p>
+        <p>* Will check it isArray or not and return true or false</p>
+        <p><span class="alert alert-success" id="isArray"></span></p>
+        <p><span class="alert alert-danger">The problem with this solution is that ECMAScript 5 is not supported in
+                older browsers.</span></p>
+        <p>* Since local variables are only recognized inside their functions, variables with the same name can be
+            used in different functions.</p>
+        <p>* Local variables are created when a function starts, and deleted when the function is completed.</p>
+        <p>* JavaScript objects are containers for named values called properties or methods.</p>
+        <p>* var objectName = {propertyName1: propertyValue1, propertyName2: propertyValue2, propertyName3: propertyValue3}. You can access like </p>
+        <p class="code-block">
+            <code>objectName.propertName1 or objectName.['propertName1']</code>
+        </p>
+
+        <h5>Object Methods</h5>
+
+        <p>* Objects can also have methods.</p>
+        <p>* Methods are actions that can be performed on objects.</p>
+        <p>* Methods are stored in properties as function definitions.</p>
+        <p><img src="images/object-methods.jpg" class="img-fluid" /></p>
+        <p>* When using the === operator, equal strings are not equal, because the === operator expects equality in both
+            type and value Or even worse. Objects cannot be compared:</p>
+        <p><img src="images/string-as-objects.jpg" class="img-fluid" /></p>
+
+        <h5>String Methods and Properties</h5>
+
+        <p>* Both indexOf(), and lastIndexOf() return -1 if the text is not found.</p>
+
+        <h5>Extracting String Parts</h5>
+
+        <p>* There are 3 methods for extracting a part of a string:</p>
+        <ul>
+            <li>slice(start, end) The method takes 2 parameters: the start position, and the end position (end not
+                included).</li>
+            <li>substring(start, end) The difference is that substring() cannot accept negative indexes.</li>
+            <li>substr(start, length) The difference is that the second parameter specifies the length of the extracted
+                part.</li>
+        </ul>
+
+        <h5>Converting a String to an Array</h5>
+
+        <p>* A string can be converted to an array with the split() method:</p>
+        <p>* JavaScript will try to convert strings to numbers in all numeric operations</p>
+
+        <h5>Converting Variables to Numbers</h5>
+
+        <p>There are 3 JavaScript methods that can be used to convert variables to numbers:</p>
+        <ul>
+            <li>The Number() method</li>
+            <li>The parseInt() method</li>
+            <li>The parseFloat() method</li>
+        </ul>
+        <p>* These methods are not number methods, but global JavaScript methods.</p>
+
+        <h5>Array Elements Can Be Objects</h5>
+
+        <p>* JavaScript variables can be objects. Arrays are special kinds of objects.</p>
+        <p>* Because of this, you can have variables of different types in the same Array.</p>
+        <p>* You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:</p>
+        <p class="code-block">
+            <code>
+                myArray[0] = Date.now; <br/>
+                myArray[1] = myFunction; <br/>
+                myArray[2] = myCars; <br/>
+            </code>
+        </p>
+
+        <h5>Array Properties and Methods</h5>
+
+        <p>* The real strength of JavaScript arrays are the built-in array properties and methods:</p>
+        <p class="code-block">
+            <code>
+                var x = cars.length;   // The length property returns the number of elements <br/>
+                var y = cars.sort();   // The sort() method sorts arrays<br/>
+            </code>
+        </p>
+        <p>* Accesing last element of the array</p>
+        <p class="code-block">
+            <code>
+                var last = fruits[fruits.length - 1]; <br/>
+            </code>
+        </p>
+        <p>* The best way to loop through an array is using a standard for loop:</p>
+        <p><span class="alert alert-success" id="forloop"></span></p>
+
+        <h5>Adding Array Elements</h5>
+
+        <p>* The easiest way to add a new element to an array is using the push() method:</p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"]; <br/>
+                fruits.push("Lemon");    // adds a new element (Lemon) to fruits<br/>
+            </code>
+        </p>
+        <p>* New element can also be added to an array using the length property:</p>
+        <p class="code-block">
+            <code>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+            fruits[fruits.length] = "Lemon";    // adds a new element (Lemon) to fruits<br/>
+        </code>
+        </p>
+        <p>* Adding elements with high indexes can create undefined "holes" in an array:</p>
+        <p class="code-block">
+            <code>
+                var fruits, text2, fLen, i;<br/>
+                fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+                fruits[15] = "Lemon";<br/>
+                
+                fLen = fruits.length;<br/>
+                text2 = "<ul>";<br/>
+                    for (i = 0; i < fLen; i++) {<br/>
+                        text2 += "<li>" + fruits[i] + "</li>";<br/>
+                    }<br/>
+                    text2 += "</ul>";<br/>
+                    document.getElementById("demo2").innerHTML = text2;<br/>
+            </code>
+        </p>
+        <p><span class="alert alert-success" id="demo2"></span></p>
+
+        <h5>Associative Arrays</h5>
+
+        <p>* Many programming languages support arrays with named indexes.</p>
+        <p>* Arrays with named indexes are called associative arrays (or hashes).</p>
+        <p>* JavaScript does not support arrays with named indexes.</p>
+        <p>* In JavaScript, arrays always use numbered indexes.</p>
+        <p><img src="images/difference-between-arrays-and-objects.jpg" class="img-fluid" /></p>
+
+        <h5>Converting Arrays to Strings</h5>
+
+        <p>* The join() method also joins all array elements into a string.</p>
+        <p class="code-block">
+            <code>
+                fruits.toString()<br/>
+                Banana,Orange,Apple,Mango<br/>
+            </code>
+        </p>
+        <p>* It behaves just like toString(), but in addition you can specify the separator:</p>
+        <p class="code-block">
+            <code>
+                fruits.join(" * ")<br/>
+                Banana * Orange * Apple * Mango<br/>
+            </code>
+        </p>
+
+        <h5>Popping and Pushing</h5>
+
+        <p>* <strong>Popping</strong> items out of an array, or <strong>pushing</strong> items into an array. </p>
+        <p>* The pop() method removes the last element from an array.</p>
+        <p>* The pop() method returns the value that was "popped out".</p>
+        <p>* The push() method adds a new element to an array (at the end).</p>
+        <p>* The push() method returns the new array length:</p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+                fruits.pop(); // Removes the last element ("Mango") from fruits and returns the value mango<br/>
+            </code>
+        </p>
+        <p><span class="alert alert-success" id="pop1"></span></p>
+        <p><span class="alert alert-success" id="pop2"></span></p>
+        <p><span class="alert alert-success" id="pop3"></span></p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+                fruits.push(); // Adds a new element ("Kiwi") to fruits and returns the length of the array<br/>
+            </code>
+        </p>
+        <p><span class="alert alert-success" id="push1"></span></p>
+        <p><span class="alert alert-success" id="push2"></span></p>
+        <p><span class="alert alert-success" id="push3"></span></p>
+        <p>* Shifting is equivalent to popping, working on the first element instead of the last.<br />
+            The shift() method removes the first array element and "shifts" all other elements to a lower index.<br />
+            The shift() method returns the string that was "shifted out".</p>
+        <p>* The unshift() method adds a new element to an array (at the beginning), and "unshifts" older
+            elements.<br />
+            The unshift() method returns the new array length.<br />
+        </p>
+        <p>* Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete.</p>
+        <p><span class="alert alert-danger">Using delete may leave undefined holes in the array. Use pop() or shift()
+                instead.</span></p>
+
+        <h5>Splicing an Array</h5>
+
+        <p>* The first parameter (2) defines the position where new elements should be added (spliced in).</p>
+        <p>* The second parameter (0) defines how many elements should be removed.</p>
+        <p>* The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.</p>
+        <p>* The splice() method returns an array with the deleted items</p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                fruits.splice(2, 2, "Lemon", "Kiwi"); <br/>// delete from the position 2 and delete 2 items. And will add the two items lemon and kiwi. Then return new array.<br/>
+            </code>
+        </p>
+
+        <h5>Splicing an Array</h5>
+
+        <p>* Splice() is used to add or remove element by giving parameters.</p>
+        <p><span class="alert alert-warning">With clever parameter setting, you can use splice() to remove elements
+                without leaving "holes" in the array</span></p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+                fruits.splice(2, 0, "Lemon", "Kiwi");<br/>
+                // first parameter (2) is starting parameter,<br/>
+                //second parameter (0) is to delete the number of records, <br/>
+                //third (Lemon) and 4th (Kiwi) are the parameteres to adding records.<br/>
+                
+                fruits.splice(2, 2, "Lemon", "Kiwi"); <br/>
+                // first parameter (2) is starting parameter,<br/>
+                //second parameter (2) is to delete the number of records.<br/>
+
+                fruits.splice(0, 1);<br/>
+                // first parameter (0) is starting parameter,<br/>
+                //second parameter (1) is to delete the number of records.<br/>
+            </code>
+        </p>
+
+        <h5>Merging (Concatenating) Arrays</h5>
+
+        <p>* The concat() method creates a new array by merging (concatenating) existing arrays.</p>
+        <p class="code-block">
+            <code>
+                var myGirls = ["Cecilie", "Lone"];<br/>
+                var myBoys = ["Emil", "Tobias", "Linus"];<br/>
+                var myChildren = myGirls.concat(myBoys);   // Concatenates (joins) myGirls and myBoys<br/>
+            </code>
+        </p>
+        <p>* The concat() method can take any number of array arguments</p>
+        <p class="code-block">
+            <code>
+                var arr1 = ["Cecilie", "Lone"]; <br/>
+                var arr2 = ["Emil", "Tobias", "Linus"];<br/>
+                var arr3 = ["Robin", "Morgan"];<br/>
+                var myChildren = arr1.concat(arr2, arr3);   // Concatenates arr1 with arr2 and arr3<br/>
+            </code>
+        </p>
+        <p>* The concat() method can also merge string values to arrays:</p>
+        <p class="code-block">
+            <code>
+                var arr1 = ["Emil", "Tobias", "Linus"];<br/>
+                var myChildren = arr1.concat("Peter"); <br/>
+                Emil,Tobias,Linus,Peter<br/>
+            </code>
+        </p>
+        <p>* The slice() method slices out a piece of an array into a new array.</p>
+        <p>* This example slices out a part of an array starting from array element 3 ("Apple")</p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br/>
+                var citrus = fruits.slice(3);<br/>
+                Apple,Mango<br/>
+            </code>
+        </p>
+        <p>* When the slice() method is given two arguments, it selects array elements from the start argument, and up
+            to (but not included) the end argument</p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br/>
+                var citrus = fruits.slice(1,3);<br/>
+                Orange,Lemon<br/>
+            </code>
+        </p>
+        <p>* If the end argument is omitted, like in the first examples, the slice() method slices out the rest of the
+            array.</p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];<br/>
+                var citrus = fruits.slice(2);<br/>
+                Lemon,Apple,Mango<br/>
+            </code>
+        </p>
+
+        <h5>Automatic toString()</h5>
+
+        <p>* JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
+        </p>
+        <p>* This is always the case when you try to output an array.</p>
+        <p>* These two examples will produce the same result:</p>
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+                fruits.toString();<br/>
+                fruits;<br/>
+                Banana,Orange,Apple,Mango<br/>
+            </code>
+        </p>
+
+        <h5>Array Methods</h5>
+
+        <p class="code-block">
+            <code>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];<br/>
+                fruits.sort();     // Sorts the elements of fruits<br/>
+                fruits.reverse();  // Then reverse the order of the elements<br/>
+            </code>
+        </p>
+
+        <h5>Number Sort by Compare Function</h5>
+
+        <p>* The sort() method will produce incorrect result when sorting numbers. You can fix this by providing a
+            compare function.</p>
+        <p class="code-block">
+            <code>
+                var points = [40, 100, 1, 5, 25, 10]; <br/>
+                points.sort(function(a, b){return a - b});<br/>
+                1,5,10,25,40,100<br/>
+                //Use the same trick to sort an array descending<br/>
+                points.sort(function(a, b){return a - b});<br/>
+                100,40,25,10,5,1<br/>
+            </code>
+        </p>
+
+        <h5>JavaScript Array Iteration Methods</h5>
+
+        <p>* Array iteration methods operate on every array item.</p>
+        <p>* Array.forEach() -> The forEach() method calls a function (a callback function) once for each array element.
+        </p>
+        <p>* Note that the function takes 3 arguments</p>
+        <p class="code-block">
+            <code>
+                var txt = ""; <br/>
+                var numbers = [45, 4, 9, 16, 25];<br/>
+                numbers.forEach(myFunction);<br/>
+                function myFunction(value, index, array) {<br/>
+                    txt = txt + value; <br/>
+                }<br/>
+            </code>
+        </p>
+        <ul>
+            <li>The item value</li>
+            <li>The item index</li>
+            <li>The array itself</li>
+        </ul>
+
+        <h5>Array.map()</h5>
+
+        <p>* The map() method creates a new array by performing a function on each array element.</p>
+        <p>* The map() method does not execute the function for array elements without values.</p>
+        <p>* The map() method does not change the original array.</p>
+        <p>* This example multiplies each array value by 2:</p>
+        <p class="code-block">
+            <code>
+                var numbers1 = [45, 4, 9, 16, 25];<br/>
+                var numbers2 = numbers1.map(myFunction);<br/>
+                document.getElementById("demo").innerHTML = numbers2;<br/>
+                function myFunction(value, index, array) {<br/>
+                return value * 2;<br/>
+                }<br/>
+            </code>
+        </p>
+        <p>* Array.filter() -> The filter() method creates a new array with array elements that passes a test.</p>
+        <p>* Array.reduce() -> The reduce() method runs a function on each array element to produce (reduce it to) a
+            single value. </p>
+        <p>* Array.reduceRight() -> The reduceRight() method runs a function on each array element to produce (reduce it
+            to) a single value.</p>
+        <p>* Array.every() -> The every() method check if all array values pass a test.</p>
+        <p>* Array.some() -> The some() method check if some array values pass a test.</p>
+        <p>* Array.some() -> The indexOf() method searches an array for an element value and returns its position. </p>
+        <p>* Array.lastIndexOf() - > Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the
+            last occurrence of the specified element.</p>
+        <p>* Array.find() -> The find() method returns the value of the first array element that passes a test function.
+        </p>
+        <p>* Array.findIndex() -> The findIndex() method returns the index of the first array element that passes a test
+            function.</p>
+
+        <h5>Date</h5>
+
+        <p>* Date objects are static. The computer time is ticking, but date objects are not.</p>
+        <p>* 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order)</p>
+        <p>* 6 numbers specify year, month, day, hour, minute, second:</p>
+        <p>* 5 numbers specify year, month, day, hour, and minute:</p>
+        <p>* 4 numbers specify year, month, day, and hour:</p>
+        <p>* 3 numbers specify year, month, and day:</p>
+        <p>* 2 numbers specify year and month:</p>
+        <p>* You cannot omit month. If you supply only one parameter it will be treated as milliseconds.</p>
+        <p>* Previous Century -> One and two digit years will be interpreted as 19xx (xx -> 01-99) 1901,1902,1903,etc.,
+        </p>
+        <p>* The toDateString() method converts a date to a more readable format.</p>
+
+        <h5>JavaScript Math Object</h5>
+
+        <p>* The JavaScript Math object allows you to perform mathematical tasks on numbers.</p>
+        <p>* Math.round() -> Math.round(x) returns the value of x rounded to its nearest integer</p>
+        <p>* Math.pow() -> Math.pow(x, y) returns the value of x to the power of y:</p>
+        <p>* Math.sqrt() -> Math.sqrt(x) returns the square root of x:</p>
+        <p>* Math.abs() -> Math.abs(x) returns the absolute (positive) value of x:</p>
+        <p>* Math.ceil() -> Math.ceil(x) returns the value of x rounded up to its nearest integer:</p>
+        <p>* Math.floor() -> Math.floor(x) returns the value of x rounded down to its nearest integer:</p>
+        <p>* Math.sin() -> Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians).
+        </p>
+        <p>* Math.cos() -> Math.cos(x) returns the cosine (a value between -1 and 1) of the angle x (given in radians).
+        </p>
+        <p>* Math.min() and Math.max() -> Math.min() and Math.max() can be used to find the lowest or highest value in a
+            list of arguments:</p>
+        <p>* Math.random() -> Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):</p>
+
+        <h5>A Proper Random Function</h5>
+
+        <p>* As you can see from the examples above, it might be a good idea to create a proper random function to use
+            for all random integer purposes.</p>
+        <p>* This JavaScript function always returns a random number between min (included) and max (excluded):</p>
+        <p class="code-block">
+            <code>
+                //a random number between min (included) and max (excluded)<br/>
+                var random = getRndInteger(10, 150)<br/>
+                function getRndInteger(min, max) {<br/>
+                    return Math.floor(Math.random() * (max - min) ) + min;<br/>
+                }<br/>
+
+                //a random number between min and max (both included)<br/>
+                function getRndInteger(min, max) {<br/>
+                    return Math.floor(Math.random() * (max - min + 1) ) + min;<br/>
+                }<br/>
+            </code>
+        </p>
+
+        <h5>Boolean</h5>
+
+        <p>* JavaScript has a Boolean data type. It can only take the values true or false.</p>
+
+        <h5>JavaScript Labels</h5>
+
+        <p>* To label JavaScript statements you precede the statements with a label name and a colon:</p>
+        <p>* The break and the continue statements are the only JavaScript statements that can "jump out of" a code
+            block.</p>
+        <p>* The continue statement (with or without a label reference) can only be used to skip one loop iteration.</p>
+        <p>* The break statement, without a label reference, can only be used to jump out of a loop or a switch.</p>
+        <p>* With a label reference, the break statement can be used to jump out of any code block:</p>
+        <p class="code-block">
+            <code>
+                var cars = ["BMW", "Volvo", "Saab", "Ford"];<br/>
+                list: {<br/>
+                    text += cars[0];<br/>
+                    text += cars[1];<br/>
+                    break list;<br/>
+                    text += cars[2];<br/>
+                    text += cars[3];<br/>
+                }<br/>
+            </code>
+        </p>
+        
+        <h5></h5>
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Original Value</th>
+                        <th>Converted to Number</th>
+                        <th>Converted to String</th>
+                        <th>Converted to Boolean</th>
+                    </tr>
+                    <tr>
+                        <td>false</td>
+                        <td>0</td>
+                        <td>"false"</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>true</td>
+                        <td>1</td>
+                        <td>"true"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>"0"</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>"1"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>"0"</td>
+                        <td>0</td>
+                        <td>"0"</td>
+                        <td class="important">true</td>
+                    </tr>
+                    <tr>
+                        <td>"000"</td>
+                        <td>0</td>
+                        <td>"000"</td>
+                        <td class="important">true</td>
+                    </tr>
+                    <tr>
+                        <td>"1"</td>
+                        <td>1</td>
+                        <td>"1"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>NaN</td>
+                        <td>NaN</td>
+                        <td>"NaN"</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Infinity</td>
+                        <td>Infinity</td>
+                        <td>"Infinity"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>-Infinity</td>
+                        <td>-Infinity</td>
+                        <td>"-Infinity"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>""</td>
+                        <td class="important">0</td>
+                        <td>""</td>
+                        <td class="important">false</td>
+                    </tr>
+                    <tr>
+                        <td>"20"</td>
+                        <td>20</td>
+                        <td>"20"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>"twenty"</td>
+                        <td>NaN</td>
+                        <td>"twenty"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>[ ]</td>
+                        <td class="important">0</td>
+                        <td>""</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>[20]</td>
+                        <td class="important">20</td>
+                        <td>"20"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>[10,20]</td>
+                        <td>NaN</td>
+                        <td>"10,20"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>["twenty"]</td>
+                        <td>NaN</td>
+                        <td>"twenty"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>["ten","twenty"]</td>
+                        <td>NaN</td>
+                        <td>"ten,twenty"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>function(){}</td>
+                        <td>NaN</td>
+                        <td>"function(){}"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>{ }</td>
+                        <td>NaN</td>
+                        <td>"[object Object]"</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>null</td>
+                        <td class="important">0</td>
+                        <td>"null"</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>undefined</td>
+                        <td>NaN</td>
+                        <td>"undefined"</td>
+                        <td>false</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h5>JavaScript Bitwise Operations</h5>
+        <p>* Bitwise AND -> When a bitwise AND is performed on a pair of bits, it returns 1 if both bits are 1.</p>
+        <p>* Bitwise OR -> When a bitwise OR is performed on a pair of bits, it returns 1 if one of the bits are 1:</p>
+        <p>* Bitwise XOR -> When a bitwise XOR is performed on a pair of bits, it returns 1 if the bits are different
+        </p>
+        <p>* JavaScript Bitwise AND (&) -> Bitwise AND returns 1 only if both bits are 1:</p>
+        <p>* JavaScript Bitwise OR (|) -> Bitwise OR returns 1 if one of the bits are 1:</p>
+        <p>* JavaScript Bitwise XOR (^) -> Bitwise XOR returns 1 if the bits are different:</p>
+        <p>* JavaScript Bitwise NOT (~) -> </p>
+
+        <h5>JavaScript Regular Expressions</h5>
+        <p>* A regular expression is a sequence of characters that forms a search pattern. The search pattern can be
+            used for text search and text replace operations.</p>
+        <p>* When you search for data in a text, you can use this search pattern to describe what you are searching for.
+            A regular expression can be a single character, or a more complicated pattern. Regular expressions can be
+            used to perform all types of text search and text replace operations.</p>
+        <p class="code-block">
+            <code>
+                Syntax<br/>
+                <i>/pattern/modifiers;</i><br/>
+            </code>
+        </p>
+
+        <h5>Using String Methods</h5>
+        <p>* In JavaScript, regular expressions are often used with the two string methods: search() and replace().</p>
+        <p>* The search() method uses an expression to search for a match, and returns the position of the match.</p>
+        <p>* The replace() method returns a modified string where the pattern is replaced.</p>
+        
+        <h5>Regular Expression Modifiers</h5>
+        <p>* i -> Perform case-insensitive matching</p>
+        <p>* g -> Perform a global match (find all matches rather than stopping after the first match)</p>
+        <p>* m -> Perform multiline matching</p>
+        <p>* [abc] Find any of the characters between the brackets</p>
+        <p>* [0-9] Find any of the digits between the brackets</p>
+        <p>* (x|y) Find any of the alternatives separated with |</p>
+        <p>* \d Find a digit</p>
+        <p>* \s Find a whitespace character</p>
+        <p>* \b Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b</p>
+        <p>* \uxxxx Find the Unicode character specified by the hexadecimal number xxxx</p>
+        
+        <h5>JavaScript Throws Errors</h5>
+        <p><span class="alert alert-primary">* JavaScript will actually create an Error object with two properties: name
+                and message.</span></p>
+        <p>* The finally statement lets you execute code, after try and catch, regardless of the result.</p>
+        <p class="code-block">
+            <code>
+                try {<br/>
+                    Block of code to try<br/>
+                }<br/>
+                catch(err) {<br/>
+                    Block of code to handle errors<br/>
+                }<br/>
+                finally {<br/>
+                    Block of code to be executed regardless of the try / catch result<br/>
+                }
+            </code>
+        </p>
+        <p><img src="images/javaScript-errors.jpg" class="img-fluid" /></p>
+        
+        <h5>JavaScript Scope</h5>
+        <p>* Scope determines the accessibility (visibility) of variables.</p>
+        <h6>JavaScript Function Scope</h6>
+        <p>In JavaScript there are two types of scope.</p>
+        <ul>
+            <li>Local scope</li>
+            <li>Global scope</li>
+        </ul>
+        <p>Local JavaScript Variables -> Variables declared within a JavaScript function, become LOCAL to the function. Local variables have Function scope: They can only be accessed from within the function.</p>
+        <p>Global JavaScript Variables -> A variable declared outside a function, becomes GLOBAL. A global variable has global scope: All scripts and functions on a web page can access it.</p>
+        <p>Automatically Global -> If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.</p>
+        <p class="code-block">
+            <code>
+                myFunction();<br/>
+                // code here can use carName<br/>
+                function myFunction() {<br/>
+                carName = "Volvo";<br/>
+                }<br/>
+            </code>
+        </p>
+        
+        <h5>Strict Mode</h5>
+        <p>* All modern browsers support running JavaScript in "Strict Mode".</p>
+        <p><span class="alert alert-warning">In "Strict Mode", undeclared variables are not automatically global.</span></p>
+        
+        <h5>Global Variables in HTML</h5>
+        <p>* With JavaScript, the global scope is the complete JavaScript environment.</p>
+        <p>* In HTML, the global scope is the window object. All global variables belong to the window object.</p>
+        <p><img src="images/global-html-variable.jpg" class="img-fluid" /></p>
+        <h6>The Lifetime of JavaScript Variables</h6>
+        <p>* The lifetime of a JavaScript variable starts when it is declared. <br/>
+            * Local variables are deleted when the function is completed.<br/>
+            * In a web browser, global variables are deleted when you close the browser window (or tab).<br/>
+            * Function arguments (parameters) work as local variables inside functions.
+        </p>
+        
+        <h5>JavaScript Hoisting</h5>
+        <p>* In JavaScript, a variable can be declared after it has been used.</p>
+        <p>* Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).</p>
+        <p class="code-block">
+            <code>
+                x = 5;<br/>
+                console.log(x);<br/>
+                var x;<br/>
+            </code>
+        </p>
+        <p>* In other words; a variable can be used before it has been declared.</p>
+        <p class="code-block">
+            <code>
+                var x;<br/>
+                x = 5;<br/>
+                console.log(x);<br/>
+            </code>
+        </p>
+        <p>* Variables and constants declared with let or const are not hoisted!</p>
+        <p><span class="alert alert-primary">* JavaScript Initializations are Not Hoisted. JavaScript only hoists declarations, not initializations.</span></p>
+        <p><span class="alert alert-primary">* Declare Your Variables At the Top..! Hoisting is (to many developers) an unknown or overlooked behavior of JavaScript.</span></p>
+        
+        <h5>JavaScript <span class="text-lowercase">"Use Strict"</span></h5>
+        <p>* "use strict"; Defines that JavaScript code should be executed in "strict mode".</p>
+        <p>* Strict mode is declared by adding "use strict"; to the beginning of a script or a function. Declared at the beginning of a script, it has global scope (all code in the script will execute in strict mode).</p>
+        <p><img src="images/strict.jpg" class="img-fluid" /></p>
+        <p><span class="alert alert-danger">* Declared inside a function, it has local scope (only the code inside the function is in strict mode):</span></p>
+        <p><span class="alert alert-warning">* You can use strict mode in all your programs. It helps you to write cleaner code, like preventing you from using undeclared variables.</span></p>
+        
+        <h5>Why Strict Mode?</h5>
+        <p>* Strict mode makes it easier to write "secure" JavaScript.</p>
+        <p>* Strict mode changes previously accepted "bad syntax" into real errors.</p>
+        <p><img src="images/strict-declaration-at-beginning.jpg" class="img-fluid" /></p>
+        <p>* As an example, in normal JavaScript, mistyping a variable name creates a new global variable. In strict mode, this will throw an error, making it impossible to accidentally create a global variable.</p>
+        <p>* In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable properties.</p>
+        <p>* In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.</p>
+        <p>* Using a variable, without declaring it, is not allowed.</p>
+        <p>* Using an object, without declaring it, is not allowed.</p>
+        <p><span class="alert alert-warning">* Objects are variables too.<br/>* Duplicating a parameter name is not allowed.</span></p>
+        <p>* Deleting a variable (or object) is not allowed.</p>
+        
+        <h5><span class="text-lowercase">"this"</span> Keyword</h5>
+        <p><img src="images/what-is-this.jpg" class="img-fluid"></p>
+        
+        <h5><span class="text-lowercase">let</span></h5>
+        <p><img src="images/let.jpg" class="img-fluid"></p>
+        
+        <h5><span class="text-lowercase">const</span></h5>
+        <p><img src="images/let.jpg" class="img-fluid"></p>
+        <p>* JavaScript const variables must be assigned a value when they are declared.</p>
+        <p><img src="images/how-to-asign-const.jpg" class="img-fluid"></p>
+        <p>* Primitive Values -> If we assign a primitive value to a constant, we cannot change the primitive value.</p>
+        <p>* Constant Objects can Change -> You can change the properties of a constant object. But you can NOT reassign a constant object.</p>
+        <p><img src="images/can-changer-property-cannot-reassign-object.jpg" class="img-fluid"></p>
+        <p>* Redeclaring or reassigning an existing var or let variable to const, in the same scope, or in the same block, is not allowed.</p>
+        <p>* Redeclaring or reassigning an existing const variable, in the same scope, or in the same block, is not allowed.</p>
+        <p>* Redeclaring a variable with const, in another scope, or in another block, is allowed.</p>
+        <p>* Variables defined with const are not hoisted to the top -> A const variable cannot be used before it is declared.</p>
+        
+        <h5>Arrow Function</h5>
+        <p>* Arrow functions were introduced in ES6.</p>
+        <p>* Arrow functions allow us to write shorter function syntax.</p>
+        <p><img src="images/arrow-function.jpg" class="img-fluid"></p>
+        <p><img src="images/this-in-arrow-function.jpg" class="img-fluid"></p>
+        
+        <h5>JavaScript Classes</h5>
+        <p>* ECMAScript 2015 -> ES6, also known as ECMAScript2015, introduced classes.</p>
+        <p>* A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.</p>
+        <h6>Class Definition</h6>
+        <p>* Use the keyword class to create a class, and always add the constructor() method. The constructor method is called each time the class object is initialized.</p>
+        <p><img src="images/javaScript-class.jpg" class="img-fluid"></p>
+        <p><span class="alert alert-warning">* Note: The constructor method is called automatically when the object is initialized.</span></p>
+        <h6>Methods</h6>
+        <p>* The constructor method is special, it is where you initialize properties, it is called automatically when a class is initiated, and it has to have the exact name "constructor", in fact, if you do not have a constructor method, JavaScript will add an invisible and empty constructor method.</p>
+        <p><img src="images/method-without-parameter.jpg" class="img-fluid"></p>
+        <p class="code-block">
+            <code>
+                class Car { //Class <br/>
+                    constructor(brand) { // Construcctor<br/>
+                      this.carname = brand; //property initialise<br/>
+                    }<br/>
+                    present() { // Method<br/>
+                      return "I have a " + this.carname;<br/>
+                    }<br/>
+                  }<br/>
+                  
+                  mycar = new Car("Ford"); //Class initialise <br/>
+                  document.getElementById("demo").innerHTML = mycar.present();<br/>
+            </code>
+        </p>
+        <p><img src="images/method-with-parameter.jpg" class="img-fluid"></p>
+        <h6>Static Methods</h6>
+        <p>* Static methods are defined on the class itself, and not on the prototype -> That means you cannot call a static method on the object (mycar), but on the class (Car).</p>
+        <p><img src="images/method-static.jpg" class="img-fluid"></p>
+        <h6>Inheritance</h6>
+        <p>* To create a class inheritance, use the "extends" keyword.</p>
+        <p>* A class created with a class inheritance inherits all the methods from another class.</p>
+        <p><img src="images/inheritance.jpg" class="img-fluid"></p>
+        <p>* The "super()" method refers to the parent class.</p>
+        <p>* By calling the "super()" method in the constructor method, we call the parent's constructor method and gets access to the parent's properties and methods.</p>
+        <p><span class="alert alert-warning">* Inheritance is useful for code reusability: reuse properties and methods of an existing class when you create a new class.</span></p>
+        <h6>Getters and Setters</h6>
+        <p>* Classes also allows you to use getters and setters.</p>
+        <p>* It can be smart to use getters and setters for your properties, especially if you want to do something special with the value before returning them, or before you set them.</p>
+        <p>* To add getters and setters in the class, use the get and set keywords.</p>
+        <p><img src="images/getters-setters.jpg" class="img-fluid"></p>
+        <p><span class="alert alert-warning">* Note: even if the getter is a method, you do not use parentheses when you want to get the property value.</span></p>
+        <p>* The name of the getter/setter method cannot be the same as the name of the property, in this case carname.</p>
+        <p>* Many programmers use an underscore character _ before the property name to separate the getter/setter from the actual property.</p>
+        <p><img src="images/differentiate-by-underscore-getters-setters.jpg" class="img-fluid"></p>
+        <p>* Unlike functions, and other JavaScript declarations, class declarations are not hoisted -> That means that you must declare a class before you can use it.</p>
+        <p><span class="alert alert-warning">* Note: For other declarations, like functions, you will NOT get an error when you try to use it before it is declared, because the default behavior of JavaScript declarations are hoisting (moving the declaration to the top).</span></p>
+        
+        <h5>Debugging</h5>
+        <p>* Searching for (and fixing) errors in programming code is called code debugging.</p>
+        <p><span class="alert alert-primary">Debugging is the process of testing, finding, and reducing bugs (errors) in computer programs. The first known computer bug was a real bug (an insect) stuck in the electronics.</span></p>
+        
+        <h5>JavaScript Coding Conventions</h5>
+        <p>*Coding conventions are style guidelines for programming. They typically cover:</p>
+        <ul>
+            <li>Naming and declaration rules for variables and functions.</li>
+            <li>Rules for the use of white space, indentation, and comments.</li>
+            <li>Programming practices and principles</li>
+        </ul>
+        <p>* Coding conventions secure quality:</p>
+        <ul>
+            <li>Improves code readability</li>
+            <li>Make code maintenance easier</li>
+        </ul>
+        <p>* Coding conventions can be documented rules for teams to follow, or just be your individual coding practice.</p>
+        <p><span class="alert alert-primary">* For readability, avoid lines longer than 80 characters.</span></p>
+        <p><span class="alert alert-primary">* Avoid global variables, avoid new, avoid ==, avoid eval().</span></p>
+        <p><span class="alert alert-primary">* JavaScript will close the return statement at the end of the line, because it is a complete statement.</span></p>
+        <p><span class="alert alert-danger">* Never break a return statement.</span></p>
+        <p><span class="alert alert-primary">* Use defer="true" in the script tag. The defer attribute specifies that the script should be executed after the page has finished parsing, but it only works for external scripts.</span></p>
+
+        <h5>JavaScript Forms</h5>
+        <p>* HTML form validation can be done by JavaScript.</p>
+        <h6>Data Validation</h6>
+        <p>* Server side validation is performed by a web server, after input has been sent to the server.</p>
+        <p>* Client side validation is performed by a web browser, before input is sent to a web server.</p>
+        <p>* Constraint Validation HTML Input Attributes</p>
+        <p>* Constraint Validation CSS Pseudo Selectors</p>
+
+        <h5>JavaScript Objects</h5>
+        <h6>Object Methods</h6>
+        <p>* Methods are actions that can be performed on objects. Object properties can be both primitive values, other objects, and functions.</p>
+        <p>* An object method is an object property containing a function definition.</p>
+        
+        <h5>Creating a JavaScript Object</h5>
+        <p>* With JavaScript, you can define and create your own objects.</p>
+        <p>* There are different ways to create new objects:</p>    
+        <ul>
+            <li>Define and create a single object, using an object literal.</li>
+            <li>Define and create a single object, with the keyword new.</li>
+            <li>Define an object constructor, and then create objects of the constructed type.</li>
+        </ul>        
+        <h5>Using Object.values()</h5>        
+        <p>* Any JavaScript object can be converted to an array using Object.values().</p>
+        <h5>Functions Parameters</h5>
+        <p><img src="images/arguments-vs-objects.jpg" class="img-fluid" /></p>
+        <h5>Math.max</h5>
+        <p>* You can find the largest number (in a list of numbers) using the Math.max() method:</p>
+        <p class="code-block">
+            <code>
+                Math.max(1,2,3);  // Will return 3<br/>
+            </code>
+        </p>
+
+        <h5>JavaScript Closures</h5>
+        <p>* A closure is a function having access to the parent scope, even after the parent function has closed.</p>
+
+        <p id="appendHTML"></p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/testing.js"></script>
+</body>
+
+</html>
