@@ -1,3 +1,7 @@
+body {
+  background-color: grey;
+}
+
 div[class^="angloModernDms"] > .container-fluid {
   left: 0;
   right: 0;
