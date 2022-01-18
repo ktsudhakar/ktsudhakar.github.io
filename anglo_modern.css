@@ -1,7 +1,30 @@
- @media(max-width: 768px) {
-  div[class^="bodyMainContent"].col-10 {
-    max-width: 100%;
-    flex: 0 0 100%;
-    margin: 0 15px;
-  }
+div[class^="angloModernDms"] > .container-fluid {
+  left: 0;
+  right: 0;
+  max-width: 100% !important;
 }
+
+div[class^="headerImage"] {
+  height: 125px;
+}
+
+div[class^="headerImage"] .col-10 img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 10px;
+  max-height: none;
+}
+
+div[class^="headerImage"] .col-10,
+div[class^="bodyMainContent"].col-10 {
+  max-width: 100%;
+  flex: 0 0 100%;
+  margin: 0 15px;
+}
+
+div[class^="headerImage"] .col-10.offset-1,
+div[class^="bodyMainContent"].col-10.offset-1 {
+  margin: 0;
+}
+
