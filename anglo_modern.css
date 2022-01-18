@@ -75,11 +75,11 @@
   div[class^="ms-TextField searchInputContainer_"],
   div[class^="ms-Dropdown searchInput_"] span,
   div[class^="searchContainer"] div[class^="primaryButton"] {
-    height: 32px;
+    height: 32px !important;
     line-height: 32px;
   }
   
-  .div[class^="searchContainer"] div[class^="primaryButton"] {
+  div[class^="searchContainer"] div[class^="primaryButton"] {
     padding: 10px;
     display: flex;
     justify-content: center;
