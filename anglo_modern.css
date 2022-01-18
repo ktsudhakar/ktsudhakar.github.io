@@ -1,7 +1,4 @@
-body {
-  background-color: grey;
-}
-
+/*MEDIA CSS*/
 @media (max-width: 768px) {
   /*COMMON CSS*/
   div[class^="angloModernDms"] > .container-fluid {
@@ -24,6 +21,7 @@ body {
     margin: 30px 0 30px -15px;
   }
 
+  
   /*HEADER CSS*/
   div[class^="headerImage"] {
     height: 140px !important;
@@ -57,7 +55,12 @@ body {
     right: 0px;
   }
   
+  
   /*SEARCH CSS*/
+  div[class^="searchContainer"] div[class^="searchHeading"] {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
   div[class^="searchContainer"] .col-3 {
     max-width: 50%;
     flex: 0 0 50%;
@@ -65,8 +68,7 @@ body {
   div[class^="searchContainer"] div[class^="noPadding"] {
     padding-left: 15px;
   }
-  div[class^="searchContainer"] div[class^="searchHeading"] {
-    font-size: 20px !important;
-    line-height: 30px !important;
+  div[class^="searchContainer"] .pr-0.col-6 {
+    padding-right: 15px !important;
   }
 }
