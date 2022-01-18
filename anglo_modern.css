@@ -8,6 +8,11 @@ body {
     right: 0;
     max-width: 100% !important;
   }
+  
+  div[class^="angloModernDms"] {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 
   div[class^="headerImage"] {
     height: 140px !important;
@@ -42,7 +47,7 @@ body {
     margin: 0;
   }
   
-  div[class^="bodyMainContent"] div[class^="menuIcon"] svg {
+  div[class^="bodyMainContent"] span[class^="menuIcon"] svg {
     height: 40px;
     width: 40px;
     position: absolute;
@@ -51,10 +56,6 @@ body {
   }
   
   /*SEARCH CSS*/
-  div[class^="searchContainer"] .col-6 {
-    max-width: 100%;
-    flex: 0 0 100%;
-  }
   div[class^="searchContainer"] .col-3 {
     max-width: 50%;
     flex: 0 0 50%;
@@ -63,7 +64,7 @@ body {
     padding-left: 15px;
   }
   div[class^="searchContainer"] div[class^="searchHeading"] {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 20px !important;
+    line-height: 30px !important;
   }
 }
