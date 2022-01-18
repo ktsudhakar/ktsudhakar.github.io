@@ -61,16 +61,20 @@
     font-size: 20px !important;
     line-height: 30px !important;
   }
+  
   div[class^="searchContainer"] .col-3 {
     max-width: 50%;
     flex: 0 0 50%;
   }
+  
   div[class^="searchContainer"] div[class^="noPadding"] {
     padding-left: 15px;
   }
+  
   div[class^="searchContainer"] .pr-0.col-6 {
     padding-right: 15px !important;
   }
+  
   div[class^="ms-TextField is-active searchInputContainer_"],
   div[class^="ms-TextField searchInputContainer_"],
   div[class^="ms-Dropdown searchInput_"] span,
@@ -85,6 +89,7 @@
     justify-content: center;
     align-items: center;
   }
+  
   div[class^="ms-Dropdown searchInput_"] span {
     font-size: 15px;
   }
