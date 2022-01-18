@@ -1,3 +1,7 @@
-body {
-  background-color: yellow;
+@media (max-width: 768px) {
+  div[class^="bodyMainContent"].col-10 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 0 15px;
+  }
 }
