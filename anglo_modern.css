@@ -133,6 +133,10 @@
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 div[class^="col"] {
     padding: 0;
   }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 div[class^="col"] div[class^="areaName"] {
+    color: #c20325;
+    font-size: 18px;
+  }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 div[class^="col"] span[class^="disciplineName"] {
     padding-left: 15px;
     display: block;
