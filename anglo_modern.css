@@ -121,4 +121,16 @@
     padding: 0 5px !important;
   }
   
+  
+  /*DOCUMENT CSS*/
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] {
+    display: none;
+  }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 div[class^="col"] {
+    padding: 0;
+  }
 }
