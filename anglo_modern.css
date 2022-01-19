@@ -138,6 +138,7 @@
     display: block;
   }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 div[class^="col"] span[class^="disciplineName"] + svg {
+    position: absolute;
     top: 5px;
     right: 15px;
   }
