@@ -79,7 +79,7 @@
   div[class^="ms-TextField searchInputContainer_"],
   div[class^="ms-Dropdown searchInput_"] span,
   div[class^="searchContainer"] div[class^="primaryButton"] {
-    height: 40x !important;
+    height: 40px !important;
     line-height: 40px;
   }
   
@@ -101,11 +101,19 @@
     flex: 0 0 100%;
     padding: 0 15px;
   }
+  div[class^="standaradhub"] .col-5  div[class^="headingStandardHub"] {
+    padding-left: 15px;
+  }
   div[class^="standaradhub"] .col-3,
-  div[class^="standaradhub"] .col-2, {
+  div[class^="standaradhub"] .col-2 {
     max-width: 50%;
     flex: 0 0 50%;
     padding: 0 15px;
+  }
+  div[class^="standaradhub"] .col-3 > div,
+  div[class^="standaradhub"] .col-2 > div {
+    width: calc(100% - 30px) !important;
+    margin: 0 auto 30px auto;
   }
   
 }
