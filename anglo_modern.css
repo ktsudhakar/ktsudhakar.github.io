@@ -170,7 +170,7 @@
     right: 0;
     top: 50px;
   }
-  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 > .row > div[class^="documentGridContainer"] div[class^="documentGrid"] div[class^="documentMenu"] div[class^="menuLinkIcon"] {
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 > .row > div[class^="documentGridContainer"] div[class^="documentGrid"] div[class^="documentMenu"] span[class^="menuLinkIcon"] {
     display: none;
   }
 }
