@@ -133,4 +133,24 @@
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 div[class^="col"] {
     padding: 0;
   }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 div[class^="col"] span[class^="disciplineName"] {
+    padding-left: 15px;
+    display: block;
+  }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 div[class^="col"] span[class^="disciplineName"] + svg {
+    top: 5px;
+    right: 15px;
+  }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .collapse >.mt-3 > .row:first-child .col-12 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .collapse >.mt-3 > .row:first-child .col-12 div[class^="viewFolderButton"] {
+    margin: 0;
+  }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .collapse >.mt-3 > .row > div[class^="documentGridContainer"] {
+    padding: 0 25px;
+  }
+
 }
