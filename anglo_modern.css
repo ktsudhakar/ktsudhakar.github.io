@@ -152,7 +152,7 @@
     padding: 0 15px;
   }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 {
-    border-bottom : 2px solid rgba(0,0,0,.54);
+    border-bottom : 2px solid rgba(0,0,0,.25);
   }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 > .row:first-child .col-12 div[class^="standardName"],
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 > .row:first-child .col-12 a {
