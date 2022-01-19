@@ -168,7 +168,7 @@
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 > .row > div[class^="documentGridContainer"] div[class^="documentGrid"] div[class^="documentMenu"] {
     padding: 10px;
     right: 0;
-    top: 50px;
+    top: 25px;
   }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 > .row > div[class^="documentGridContainer"] div[class^="documentGrid"] div[class^="documentMenu"] span[class^="menuLinkIcon"] {
     display: none;
