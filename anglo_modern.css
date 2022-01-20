@@ -46,7 +46,7 @@
     right: 0px;
   }
   /*MENU STYLE*/
-  div[class^="menuModalContainer"] {
+  div[class^="ms-Dialog-main"] {
     width: 95%;
   }
   div[class^="menuMainContentContainer"] {
