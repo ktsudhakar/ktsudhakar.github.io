@@ -278,6 +278,13 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  div[class^="ms-Dialog-main"] div[class^="AdditionalInfoHeader"] div[class^="AdditionalInfo"] {
+    padding: 0;
+    margin-top: 25px;
+  }
+  div[class^="ms-Dialog-main"] div[class^="AdditionalInfoHeader"] div[class^="AdditionalInfo"] {
+    font-size: 20px;
+  }
   div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] .no-gutters > [class*=col-6] {
     flex: 0 0 100%;
     max-width: 100%;
