@@ -60,9 +60,8 @@
     width: 95%;
   }
   div[class^="menuMainContentContainer"] {
-    width: 100%;
-    max-width: 100%;
-    min-width: auto;
+    width: 100% !important;
+    min-width: auto !important;
   }
   
   div[class^="menuMainContentContainer"].row .col-6 {
