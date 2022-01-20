@@ -104,7 +104,7 @@
   }
   /*EXPLORE MORE*/
   div[class^="standaradhub"] > .row {
-    margin: 0 -5px;
+    margin: 0 -10px;
   }
   div[class^="standaradhub"] .col-5 {
     max-width: 100%;
