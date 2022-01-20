@@ -213,9 +213,28 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  div[class^="searchPage"] div[class^="documentCard"] {
+    padding: 0 10px;
+  }
+  div[class^="searchPage"] div[class^="documentCard"] > .row div[class^="col"] {
+    padding: 0 5px;
+  }
   div[class^="searchPage"] div[class^="documentCard"] > .row .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
+    display: flex;
+    margin-bottom: 7px;
+    align-items: center;
   }
+  div[class^="searchPage"] div[class^="documentCard"] > .row .col-6 span {
+    display: inline-grid;
+    font-size: 13px;
+    padding: 0 2px;
+    align-items: center;
+  }
+  div[class^="searchPage"] div[class^="documentCard"] > .row .col-6 > div {
+    display: flex;
+  }
+  
   
 }
