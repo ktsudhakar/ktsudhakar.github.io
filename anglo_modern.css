@@ -227,13 +227,17 @@
     align-items: center;
   }
   div[class^="searchPage"] div[class^="documentCard"] > .row .col-6 span {
-    display: inline-grid;
+    white-space: nowrap;
+    display: block;
     font-size: 13px;
     padding: 0 2px;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   div[class^="searchPage"] div[class^="documentCard"] > .row .col-6 > div {
     display: flex;
+    align-items: center;
   }
   
   
