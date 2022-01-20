@@ -6,27 +6,21 @@
     right: 0;
     max-width: 100% !important;
   }
-  
   div[class^="angloModernDms"] .col-6 {
     max-width: 100%;
     flex: 0 0 100%;
   }
-  
   div[class^="bodyMainContent"] {
     padding: 0 !important;
   }
-  
   div[class^="angloModernDms"] h1[class^="primaryHeading"] {
     font-size: 1.75rem;
     margin: 30px 0 30px -15px;
   }
-
-  
   /*HEADER STYLE*/
   div[class^="headerImage"] {
     height: 140px !important;
   }
-  
   div[class^="headerImage"] .col-10 img {
     max-width: 100%;
     height: auto;
@@ -34,19 +28,16 @@
     top: 12px;
     max-height: none;
   }
-
   div[class^="headerImage"] .col-10,
   div[class^="bodyMainContent"].col-10 {
     max-width: 100%;
     flex: 0 0 100%;
     margin: 0 15px;
   }
-
   div[class^="headerImage"] .col-10.offset-1,
   div[class^="bodyMainContent"].col-10.offset-1 {
     margin: 0;
   }
-  
   div[class^="bodyMainContent"] span[class^="menuIcon"] svg {
     height: 40px;
     width: 40px;
@@ -54,7 +45,6 @@
     top: -65px;
     right: 0px;
   }
-  
   /*MENU STYLE*/
   div[class^="menuModalContainer"] {
     width: 95%;
@@ -63,37 +53,30 @@
     width: 100% !important;
     min-width: auto !important;
   }
-  
   div[class^="menuMainContentContainer"].row .col-6 {
     max-width: 100%;
     flex: 0 0 100%;
     width: 100%;
   }
-   
   div[class^="menuMainContentContainer"].row div[class^="menuItemContainer"] {
     border-right: none;
     border-bottom: 2px solid #979797;
   }
-  
   /*SEARCH STYLE*/
   div[class^="searchContainer"] div[class^="searchHeading"] {
     font-size: 20px !important;
     line-height: 30px !important;
   }
-  
   div[class^="searchContainer"] .col-3 {
     max-width: 50%;
     flex: 0 0 50%;
   }
-  
   div[class^="searchContainer"] div[class^="noPadding"] {
     padding-left: 15px;
   }
-  
   div[class^="searchContainer"] .pr-0.col-6 {
     padding-right: 15px !important;
   }
-  
   div[class^="ms-TextField is-active searchInputContainer_"],
   div[class^="ms-TextField searchInputContainer_"],
   div[class^="ms-Dropdown searchInput_"] span,
@@ -101,19 +84,15 @@
     height: 40px !important;
     line-height: 40px;
   }
-  
   div[class^="searchContainer"] div[class^="primaryButton"] {
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
   div[class^="ms-Dropdown searchInput_"] span {
     font-size: 15px;
   }
-  
-  
   /*EXPLORE MORE*/
   div[class^="standaradhub"] > .row {
     margin: 0 -15px;
@@ -139,11 +118,11 @@
     height: auto !important;
     padding: 0 5px !important;
   }
-  
-  
   /*DOCUMENT STYLE*/
   div[class^="allDocumentsContainer"] div[class^="leftSection"] {
-    display: none;
+    margin-bottom: 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 {
     max-width: 100%;
@@ -192,7 +171,15 @@
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 > .row > div[class^="documentGridContainer"] div[class^="documentGrid"] div[class^="documentMenu"] span[class^="menuLinkIcon"] {
     display: none;
   }
-  
+  /*DOCUMENT DETAILS STYLE*/
+  div[class^="DocDetailsContainer"] {
+    padding: 0;
+  }
+  div[class^="DocDetailsContainer"] div[class^="DocItemRow"] div[class^="col-"] {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
   /*NOTIFICATION STYLE*/
   div[class^="angloModernDms"] h2[class^="secondaryHeading"] {
     font-size: 20px;
