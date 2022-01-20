@@ -217,7 +217,7 @@
     padding: 0 10px;
   }
   div[class^="searchPage"] div[class^="documentCard"] > .row:nth-child(1),
-  div[class^="searchPage"] div[class^="documentCard"] > .row:nth-child(2 ){
+  div[class^="searchPage"] div[class^="documentCard"] > .row:nth-child(2) {
     margin-bottom: 0;
   }
   div[class^="searchPage"] div[class^="documentCard"] > .row:nth-child(3) {
