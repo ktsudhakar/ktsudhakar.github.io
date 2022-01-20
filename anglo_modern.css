@@ -13,9 +13,20 @@
   div[class^="bodyMainContent"] {
     padding: 0 !important;
   }
-  div[class^="angloModernDms"] h1[class^="primaryHeading"] {
+  div[class^="angloModernDms"] h1[class^="primaryHeading"],
+  div[class^="ms-Dialog-main"] h1[class^="primaryHeading"] {
     font-size: 1.75rem;
     margin: 30px 0 30px -15px;
+  }
+  div[class^="ms-Dialog-main"] {
+    width: 95%;
+  }
+  div[class^="ms-Dialog-main"] div[class^="closeButton"] {
+    height: 30px;
+    display: flex;
+  }
+  div[class^="ms-Dialog-main"] div[class^="formHeaderborder"] {
+    padding: 5px;
   }
   /*HEADER STYLE*/
   div[class^="headerImage"] {
@@ -46,9 +57,6 @@
     right: 0px;
   }
   /*MENU STYLE*/
-  div[class^="ms-Dialog-main"] {
-    width: 95%;
-  }
   div[class^="ms-Dialog-main"] div[class^="modalTopBar"] span[class^="menuCloseIcon"] {
     padding: 0;
   }
@@ -247,6 +255,41 @@
     display: flex;
     align-items: center;
   }
-  
-  
+  /*DOCUMENT UPLOAD STYLE*/
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] {
+    width: 100%;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] .row {
+    margin: 0;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] .row > div[class^="col"] {
+    padding: 0;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] .no-gutters>.col {
+    padding: 0 15px;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] > .container-fluid {
+    padding: 0;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] div[class^="col-4"] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] .no-gutters > [class*=col-6] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] div[class*=col] div[class*=col] {
+    padding: 0;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] .row.no-gutters + .row > .col-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] > .container-fluid > .row:last-child .col-2 {
+    max-width: 150px;
+    flex: 0 0 150px;
+    margin: 20px 0;
+  }
 }
