@@ -49,9 +49,14 @@
   div[class^="ms-Dialog-main"] {
     width: 95%;
   }
+  div[class^="ms-Dialog-main"] div[class^="modalTopBar"] span[class^="menuCloseIcon"] {
+    padding: 0;
+  }
   div[class^="menuMainContentContainer"] {
     width: 100% !important;
     min-width: auto !important;
+    float: none !important;
+    margin: 0 auto;
   }
   div[class^="menuMainContentContainer"].row .col-6 {
     max-width: 100%;
