@@ -215,6 +215,8 @@
   }
   div[class^="searchPage"] div[class^="documentCard"] {
     padding: 0 10px;
+    margin-bottom: 15px;
+    min-height: 260px;
   }
   div[class^="searchPage"] div[class^="documentCard"] > .row:nth-child(2) .col-12 {
     margin-bottom: 0;
