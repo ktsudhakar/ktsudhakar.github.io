@@ -52,6 +52,10 @@
   div[class^="ms-Dialog-main"] div[class^="modalTopBar"] span[class^="menuCloseIcon"] {
     padding: 0;
   }
+  div[class^="ms-Dialog-main"] div[class^="modalTopBar"] span[class^="menuCloseIcon"] svg {
+    width: 35px;
+    height: 35px;
+  }
   div[class^="menuMainContentContainer"] {
     width: 100% !important;
     min-width: auto !important;
