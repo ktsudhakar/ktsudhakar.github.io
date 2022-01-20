@@ -199,4 +199,23 @@
   div[class^="notificationCard"] > .row:last-child {
     margin-bottom: 5px;
   }
+  
+  /*SEARCH RESULT*/
+  div[class^="searchPage"] > .no-gutters + .row + .row {
+    align-items: center;
+  }
+  div[class^="searchPage"] > .no-gutters + .row + .row .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 0;
+  }
+  div[class^="searchPage"] > .row .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  div[class^="searchPage"] div[class^="documentCard"] > .row .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
 }
