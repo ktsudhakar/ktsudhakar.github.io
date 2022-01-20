@@ -22,7 +22,7 @@
   }
   div[class^="ms-Dialog-main"] div[class^="menuHeading"] {
     font-size: 20px;
-    margin: 0;
+    padding: 0;
   }
   div[class^="ms-Dialog-main"] h1[class^="primaryHeading"] {
     font-size: 20px;
