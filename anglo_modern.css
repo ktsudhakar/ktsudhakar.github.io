@@ -22,8 +22,9 @@
   div[class^="angloModernDms"] div[class^="offset-"] {
     margin-left: 0; 
   }
-  div[class^="angloModernDms"] div[class^="noPadding"] > row > div[class^="col-"] {
-    padding : 0 15px;
+  div[class^="angloModernDms"] div[class^="noPadding"] {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   div[class^="bodyMainContent"] {
     padding: 0 !important;
@@ -356,7 +357,7 @@
   div[class^="documentTilesSection"] {
     margin-top: 0;
   }
-   div[class^="documentTilesSection"]  div[class^="tilesHeader"] {
+   div[class^="documentTilesSection"] .tilesHeader {
     width: calc(100vw - 60px);
     margin-left: 30px;
   }
