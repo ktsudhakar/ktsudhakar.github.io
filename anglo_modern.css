@@ -326,11 +326,24 @@
     flex: 0 0 150px;
     margin: 20px 0;
   }
-  /*FOLDER VIEW CSS*/
+  /*FOLDER VIEW STYLE*/
   div[class^="folderViewRow"] div[class^="leftSection"],
   div[class^="folderViewRow"] div[class^="rightSection"] {
     flex: 0 0 100%;
     max-width: 100%;
     min-height: auto !important;
   }
+  /*ADDITIONAL INFORMATION STYLE*/
+  div[class^="filerSection"] div[class^="maxFilterWidth"] {
+    width: 100%;
+  }
+  /*DOCUMENT TILE STYLR*/
+  div[class^="documentTilesSection"] {
+    margin-top: 0;
+  }
+   div[class^="documentTilesSection"]  div[class^="tilesHeader"] {
+    width: calc(100vw - 60px);
+    margin-left: 30px;
+  }
+  
 }
