@@ -208,6 +208,10 @@
     border-bottom: 2px groove rgba(0,0,0,0.1);
     margin-top: 0 !important;
   }
+  div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-4 .collapse {
+    background: #FFF;
+    padding: 10px 15px;
+  }
   /*DOCUMENT DETAILS STYLE*/
   div[class^="DocDetailsContainer"] {
     padding: 0;
