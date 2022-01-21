@@ -365,5 +365,8 @@
    div[class^="documentTilesSection"] .tilesHeader {
     width: calc(100vw - 60px);
   }
-  
+  /*REFINE YOUR SEARCH STYLE*/
+  div[class^="filerSection"] div[class^="filterSectionHeading"] + div.ms-Stack {
+    height: auto;
+  }
 }
