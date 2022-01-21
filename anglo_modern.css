@@ -369,4 +369,10 @@
   div[class^="filerSection"] div[class^="filterSectionHeading"] + div.ms-Stack {
     height: auto;
   }
+  div[class^="filerSection"] div[class^="filterSubSectionWithBorder"]  {
+    border: none;
+  }
+  div[class^="filerSection"] div[class^="filterSubSectionWithYBorder"] {
+    border-bottom: none;
+  }
 }
