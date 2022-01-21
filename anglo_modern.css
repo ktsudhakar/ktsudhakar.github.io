@@ -363,13 +363,16 @@
     width: calc(100vw - 60px);
   }
   /*REFINE YOUR SEARCH STYLE*/
-  div[class^="filerSection"] div[class^="filterSectionHeading"] + div.ms-Stack {
+  div[class^="showAdvancedSearch"] div[class^="filerSection"] div[class^="filterSectionHeading"] + div.ms-Stack {
     height: auto;
   }
-  div[class^="filerSection"] div[class^="filterSubSectionWithBorder"]  {
+  div[class^="showAdvancedSearch"] div[class^="filerSection"] div[class^="filterSubSectionWithBorder"]  {
     border: none !important;
   }
-  div[class^="filerSection"] div[class^="filterSubSectionWithYBorder"] {
+  div[class^="showAdvancedSearch"] div[class^="filerSection"] div[class^="filterSubSectionWithYBorder"] {
     border-bottom: none !important;
+  }
+  div[class^="showAdvancedSearch"] div[class^="rowContainer"] > .col-3 {
+    padding: 0;
   }
 }
