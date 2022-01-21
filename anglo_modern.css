@@ -328,6 +328,6 @@
   div[class^="folderViewRow"] div[class^="rightSection"] {
     flex: 0 0 100%;
     max-width: 100%;
-    min-height: auto;
+    min-height: auto !important;
   }
 }
