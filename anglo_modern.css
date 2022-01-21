@@ -20,6 +20,10 @@
     font-size: 1.75rem;
     margin: 30px 0 30px -15px;
   }
+  div[class^="angloModernDms"] h2[class^="secondaryHeading"] {
+    font-size: 20px;
+    margin-left: -15px;
+  }
   div[class^="ms-Dialog-main"] {
     width: 95%;
   }
@@ -225,9 +229,6 @@
     padding: 0 5px;
   }
   /*NOTIFICATION STYLE*/
-  div[class^="angloModernDms"] h2[class^="secondaryHeading"] {
-    font-size: 20px;
-  }
   div[class^="notificationCard"] > .row {
     margin-bottom: 15px;
   }
