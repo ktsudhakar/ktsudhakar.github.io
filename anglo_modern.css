@@ -302,6 +302,9 @@
   div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] {
     width: 100%;
   }
+  div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] div[class^="uploadInputContainer"] {
+    padding: 0;
+  }
   div[class^="ms-Dialog-main"] div[class^="DocUploadMainContainer"] .row {
     margin: 0;
   }
