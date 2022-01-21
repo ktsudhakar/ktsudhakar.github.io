@@ -323,4 +323,11 @@
     flex: 0 0 150px;
     margin: 20px 0;
   }
+  /*FOLDER VIEW CSS*/
+  div[class^="folderViewRow"] div[class^="leftSection"],
+  div[class^="folderViewRow"] div[class^="rightSection"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
 }
