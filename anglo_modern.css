@@ -6,6 +6,9 @@
     right: 0;
     max-width: 100% !important;
   }
+  div[class^="angloModernDms"] div[class^="folderViewContainer"] {
+    padding: 0 15px;
+  }
   div[class^="angloModernDms"] .col-6 {
     max-width: 100%;
     flex: 0 0 100%;
