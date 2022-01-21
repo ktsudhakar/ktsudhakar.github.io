@@ -367,9 +367,9 @@
     height: auto;
   }
   div[class^="filerSection"] div[class^="filterSubSectionWithBorder"]  {
-    border: none;
+    border: none !important;
   }
   div[class^="filerSection"] div[class^="filterSubSectionWithYBorder"] {
-    border-bottom: none;
+    border-bottom: none !important;
   }
 }
