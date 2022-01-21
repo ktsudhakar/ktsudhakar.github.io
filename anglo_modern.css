@@ -213,7 +213,7 @@
   }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-4 .collapse {
     background: #FFF;
-    padding: 10px 15px;
+    padding: 10px 15px 0 15px;
   }
   /*DOCUMENT DETAILS STYLE*/
   div[class^="DocDetailsContainer"] {
