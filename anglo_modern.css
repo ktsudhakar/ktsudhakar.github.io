@@ -30,7 +30,14 @@
     font-size: 1.75rem;
     margin: 30px 0 30px -15px;
   }
-  div[class^="angloModernDms"] h2[class^="secondaryHeading"] {
+  div[class^="angloModernDms"] h2[class^="secondaryHeading"],
+  div[class^="ms-Dialog-main"] span[class^="modelTitle"] {
+    font-size: 20px;
+  }
+  div[class^="ms-Dialog-main"] div[class^="modalContentContainer"] div[class^="modalHeader"] {
+    padding-bottom: 10px;
+  }
+  div[class^="ms-Dialog-main"] span[class^="modelTitle"] {
     font-size: 20px;
   }
   div[class^="angloModernDms"] h3 {
