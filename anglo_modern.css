@@ -230,6 +230,14 @@
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-3 > .row > div[class^="documentGridContainer"] div[class^="documentGrid"] div[class^="documentMenu"] span[class^="menuLinkIcon"] {
     display: none;
   }
+  div[class^="documentsListing"] div[class^="documentGrid"] div[class^="listItem"] {
+    justify-content: space-betwe
+  }
+  div[class^="documentsListing"] div[class^="documentGrid"] div[class^="listItem"] div[class^="col"] {
+    width: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+  }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-4 {
     padding: 10px 0;
     border-bottom: 2px groove rgba(0,0,0,0.1);
