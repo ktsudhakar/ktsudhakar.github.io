@@ -231,12 +231,20 @@
     display: none;
   }
   div[class^="documentsListing"] div[class^="documentGrid"] div[class^="listItem"] {
-    justify-content: space-betwe
+    justify-content: space-between;
   }
   div[class^="documentsListing"] div[class^="documentGrid"] div[class^="listItem"] div[class^="col"] {
     width: 25%;
     max-width: 25%;
     padding: 0 10px;
+  }
+  div[class^="documentsListing"] div[class^="documentGrid"] div[class^="footerRow"] {
+    justify-content: space-between;
+  }
+  div[class^="documentsListing"] div[class^="documentGrid"] div[class^="footerRow"] div[class^="col"] {
+    width: 20%;
+    max-width: 20%;
+    padding: 0;
   }
   div[class^="allDocumentsContainer"] div[class^="leftSection"] + div.col-8 .accordion .mt-4 {
     padding: 10px 0;
